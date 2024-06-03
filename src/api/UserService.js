@@ -1,9 +1,9 @@
-import axios from "./customize-axios";
+import axios from './customize-axios'
 
 
 const loginApi = (email, password) => {
-    return axios.post("/api/login", {email, password});
-  }
-  
-  
-  export {loginApi};
+  return axios.post('/api/login', { email, password })
+}
+
+
+export { loginApi }
