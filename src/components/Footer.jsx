@@ -3,6 +3,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import { Link } from '@mui/material'
+import Copyright from './Copyright'
 
 
 export default function Footer() {
@@ -29,7 +30,7 @@ export default function Footer() {
                       textAlign: 'center',
                       backgroundRepeat: 'no-repeat',
                       backgroundSize: '20%',
-                      backgroundImage: 'url(./public/react.svg)'
+                      backgroundImage: 'url(/public/react.svg)'
                     }}
                   ></Box>
                   <Typography variant="h3" fontSize='18px' fontWeight={'600'} color={'#00A7B4'}>Monkey Blogging</Typography>
@@ -110,7 +111,7 @@ export default function Footer() {
               display={'flex'}
               justifyContent={'center'}
             >
-              <Typography color={'#888B97'} >© Copyright 2022 Homemie. All rights reserved.</Typography>
+              <Copyright sx={{ mt: 0, mb: 1 }} />
             </Grid>
           </Grid>
         </Container>

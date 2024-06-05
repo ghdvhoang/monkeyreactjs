@@ -3,10 +3,10 @@ import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Card from '@mui/material/Card'
 import Grid from '@mui/material/Grid'
-import Blog from '@/assets/image/blog.png'
-import one from '@/assets/image/one.svg'
-import two from '@/assets/image/two.svg'
-import three from '@/assets/image/three.svg'
+import pcbig from '@/assets/image/pcbig.png'
+import one from '@/assets/image/one.png'
+import two from '@/assets/image/two.png'
+import three from '@/assets/image/three.png'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import { useMediaQuery, useTheme } from '@mui/material'
@@ -32,7 +32,7 @@ function Banner_Left() {
     <Stack spacing = {2}>
       <Box sx={{
         height: isMediumScreen ? 300 : 440,
-        backgroundImage: `url(${Blog})`,
+        backgroundImage: `url(${pcbig})`,
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
         borderRadius: '20px'
@@ -75,6 +75,7 @@ function Slider() {
   return (
     <Stack direction="column"
       sx ={{
+        py: { xs: 0, sm: 0, md: 1 },
         background: 'rgba(243, 237, 255, 1)',
         flex: 1,
         borderRadius: '15px'
@@ -86,9 +87,11 @@ function Slider() {
             backgroundColor: 'rgba(243, 237, 255, 1)',
             boxShadow: 'none',
             padding: '20px',
-            borderRadius: '3%' }}>
+            borderRadius: '10px' }}>
             <CardMedia
-              sx = {{ width: '30%' }}
+              sx = {{
+                width: '30%',
+                borderRadius: '10px' }}
               component="img"
               image={image}
               alt={`Card ${index + 1}`}

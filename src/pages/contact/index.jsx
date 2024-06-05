@@ -27,10 +27,16 @@ function Contact() {
 
   return (
     <Box>
-      <Header />
+      <Header/>
       <Box
         width="100%"
         height="auto"
+        sx= {{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
       >
         <Box sx={{
           display: 'flex',
@@ -69,7 +75,7 @@ function Contact() {
                 mb: { xs: 3, sm: 5, md: 7 },
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                backgroundImage: 'url(./public/monkey.svg)'
+                backgroundImage: 'url(/public/monkey.svg)'
               }}
             ></Box>
             <Typography
@@ -129,7 +135,7 @@ function Contact() {
                   variant="outlined"
                   type="text"
                   sx={{
-                    width: { xs: 350, sm: 470, md: 500 },
+                    width: { xs: 275, sm: 470, md: 500 },
                     backgroundColor: ' white',
                     borderRadius: '20px',
                     marginTop: '8px',
@@ -159,7 +165,7 @@ function Contact() {
                   variant="outlined"
                   type="text"
                   sx={{
-                    width: { xs: 350, sm: 470, md: 500 },
+                    width: { xs: 275, sm: 470, md: 500 },
                     backgroundColor: ' white',
                     borderRadius: '20px',
                     marginTop: '8px',
@@ -189,7 +195,7 @@ function Contact() {
                   variant="outlined"
                   type="text"
                   sx={{
-                    width: { xs: 350, sm: 470, md: 500 },
+                    width: { xs: 275, sm: 470, md: 500 },
                     backgroundColor: ' white',
                     borderRadius: '20px',
                     marginTop: '8px',
@@ -219,7 +225,7 @@ function Contact() {
                   variant="outlined"
                   type="text"
                   sx={{
-                    width: { xs: 350, sm: 470, md: 500 },
+                    width: { xs: 275, sm: 470, md: 500 },
                     backgroundColor: ' white',
                     borderRadius: '20px',
                     marginTop: '8px',
@@ -240,8 +246,14 @@ function Contact() {
                 color="info"
                 sx={{
                   margin: '30px auto',
-                  width: '200px',
+                  width: {
+                    xs: '200px',
+                    md: '250px'
+                  },
                   lineHeight: '40px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
                   background: 'linear-gradient(to right, #66CDAA, #87CEFA)',
                   boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
                   transition: 'all 0.3s ease',

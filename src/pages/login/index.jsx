@@ -10,11 +10,13 @@ import {
   Link,
   IconButton,
   Button,
-  Avatar
+  Avatar,
 } from '@mui/material'
 import AppleIcon from '@mui/icons-material/Apple'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
+import Copyright from '@/components/Copyright'
+
 
 function Login() {
   const navigate = useNavigate()
@@ -62,12 +64,12 @@ function Login() {
         height="auto"
         alignItems={'center'}
         position={'absolute'}
-        top={'50%'}
         left={'50%'}
         textAlign={'center'}
-        sx={{ transform: 'translate(-50%, -50%)' }}
+        sx={{ transform: 'translateX(-50%)' }}
       >
         <Box
+          mt={"24px"}
           sx={{
             width: 'auto',
             height: '160px',
@@ -104,7 +106,7 @@ function Login() {
               variant="outlined"
               type="text"
               sx={{
-                width: '500px',
+                width: '100%',
                 backgroundColor: ' white',
                 borderRadius: '20px',
                 marginTop: '8px',
@@ -138,7 +140,7 @@ function Login() {
                 )
               }}
               sx={{
-                width: '500px',
+                width: '100%',
                 backgroundColor: ' white',
                 borderRadius: '20px',
                 marginTop: '8px',
@@ -213,6 +215,7 @@ function Login() {
             <Avatar alt="facebook" src="./public/facebook.svg" />
           </Box>
           <Box
+            mb={"24px"}
             sx = {{
               display: 'flex',
               justifyContent: 'center'
@@ -242,6 +245,7 @@ function Login() {
             </NavLink>
           </Box>
         </form>
+        <Copyright sx={{ mt: 6, mb: 1 }} />
       </Box>
     </Box>
   )

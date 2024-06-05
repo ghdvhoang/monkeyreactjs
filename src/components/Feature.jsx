@@ -1,5 +1,5 @@
 import { Box, Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
-import card from '@/assets/image/card.svg'
+import card from '@/assets/image/card.png'
 
 function Heading() {
   return (

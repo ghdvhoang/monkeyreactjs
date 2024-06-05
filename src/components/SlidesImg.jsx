@@ -4,24 +4,16 @@ import {
   CardMedia,
   CardContent
 } from '@mui/material'
-import slide1 from '../assets/image/slide1.svg'
-import slide2 from '../assets/image/slide2.svg'
-import slide3 from '../assets/image/slide3.svg'
-import slide4 from '../assets/image/slide4.svg'
+import slide1 from '../assets/image/slide1.png'
+import slide2 from '../assets/image/slide2.png'
+import slide3 from '../assets/image/slide3.png'
+import slide4 from '../assets/image/slide4.png'
 import CardFrame from '@/components/CardFrame'
 const cards = [
-  {
-    image: slide1
-  },
-  {
-    image: slide2
-  },
-  {
-    image: slide3
-  },
-  {
-    image: slide4
-  }
+  { id: 1, image: slide1 },
+  { id: 2, image: slide2 },
+  { id: 3, image: slide3 },
+  { id: 4, image: slide4 }
 ]
 
 function SlidesImg() {
@@ -35,9 +27,9 @@ function SlidesImg() {
         margin: '80px 0 50px'
       }}
     >
-      {cards.map((card) => (
+      {cards.map((card, index) => (
         <Card
-          key={card.image}
+          key={index}
           sx={{
             width: 346,
             borderRadius: '20px',
@@ -53,6 +45,7 @@ function SlidesImg() {
             }}
           >
             <CardFrame />
+            {/* module */}
           </CardContent>
         </Card>
       ))}
