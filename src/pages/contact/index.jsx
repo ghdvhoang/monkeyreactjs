@@ -75,7 +75,7 @@ function Contact() {
                 mb: { xs: 3, sm: 5, md: 7 },
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                backgroundImage: 'url(/monkey.png)'
+                backgroundImage: 'url(/monkey.svg)'
               }}
             ></Box>
             <Typography

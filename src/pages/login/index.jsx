@@ -207,7 +207,7 @@ function Login() {
                 margin: '0 20px'
               }}
               alt="google"
-              src="./public/google.svg"
+              src="/google.svg"
             />
             <Avatar alt="facebook" src="/facebook.svg" />
           </Box>
