@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 import * as Yup from 'yup'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import { toast, Slide } from 'react-toastify'
-
+// import monkey from '@/assets/image/monkey.png'
 const Schema = Yup.object({
   fullname: Yup.string()
     .required('Please enter your fullname.'),
@@ -75,7 +75,7 @@ function Contact() {
                 mb: { xs: 3, sm: 5, md: 7 },
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                backgroundImage: 'url(/public/monkey.svg)'
+                backgroundImage: 'url(@/assets/image/monkey.png)'
               }}
             ></Box>
             <Typography

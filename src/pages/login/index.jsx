@@ -10,7 +10,7 @@ import {
   Link,
   IconButton,
   Button,
-  Avatar,
+  Avatar
 } from '@mui/material'
 import AppleIcon from '@mui/icons-material/Apple'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
@@ -69,24 +69,21 @@ function Login() {
         sx={{ transform: 'translateX(-50%)' }}
       >
         <Box
-          mt={"24px"}
+          mt={'24px'}
           sx={{
             width: 'auto',
             height: '160px',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundImage: 'url(./public/react.svg)'
+            backgroundImage: 'url(/public/react.svg)'
           }}
         ></Box>
 
         <Typography
           fontWeight={'700'}
           lineHeight={'48px'}
-          variant="h4"
-          pr="10px"
-          pl="30px"
-          color={'#2EBAC1'}
-        >
+          variant="h3"
+          color={'#2EBAC1'}>
           Monkey Blogging
         </Typography>
         <form onSubmit={handleLogin}>
@@ -215,7 +212,7 @@ function Login() {
             <Avatar alt="facebook" src="./public/facebook.svg" />
           </Box>
           <Box
-            mb={"24px"}
+            mb={'24px'}
             sx = {{
               display: 'flex',
               justifyContent: 'center'

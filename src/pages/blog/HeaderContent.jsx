@@ -69,7 +69,7 @@ function HeaderContent() {
               alignItems: 'center',
               justifyContent: 'space-between'
             }}>
-              <VisibilityIcon/>1234
+              <VisibilityIcon/>1907
             </Typography>
           </Stack>
         </Stack>

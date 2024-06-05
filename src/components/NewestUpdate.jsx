@@ -31,10 +31,10 @@ function Banner_Left() {
   return (
     <Stack spacing = {2}>
       <Box sx={{
-        height: isMediumScreen ? 300 : 440,
+        height: isMediumScreen ? 350 : 440,
         backgroundImage: `url(${pcbig})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'top center',
+        backgroundPosition: 'center',
         borderRadius: '20px'
       }}>
       </Box>
@@ -90,15 +90,16 @@ function Slider() {
             borderRadius: '10px' }}>
             <CardMedia
               sx = {{
-                width: '30%',
-                borderRadius: '10px' }}
+                width: { xs: '45%', sm: '35%', md: '30%' },
+                borderRadius: '10px'
+              }}
               component="img"
               image={image}
               alt={`Card ${index + 1}`}
             />
             <Stack sx={{ display: 'flex',
               flexDirection: 'column',
-              width: '100%' }}>
+              width: '70%' }}>
               <CardContent>
                 <KnowledgeBT />
                 <Typography variant='h6' sx = {{

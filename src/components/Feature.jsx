@@ -28,8 +28,8 @@ function Card() {
         mb: theme.spacing(2)
       }}
     >
-      <Stack sx={{ padding: theme.spacing(isSmallScreen ? 3 : 3) }}>
-        <Stack direction="row" spacing={isSmallScreen ? 17 : 25} sx={{ alignItems: 'center' }}>
+      <Stack sx={{ padding: theme.spacing(isSmallScreen ? 2 : 3) }}>
+        <Stack direction="row" spacing={isSmallScreen ? 12 : 25} sx={{ alignItems: 'center' }}>
           <Box sx={{ width: isSmallScreen ? '85px' : 100,
             padding: '3px', borderRadius: '7px', textAlign: 'center', backgroundColor: 'rgba(243, 237, 255, 1)', color: 'rgba(107, 107, 107, 1)', textTransform: 'none', fontFamily: 'Montserrat, sans-serif' }}>
             <Typography variant="body2">Kiến thức</Typography>
