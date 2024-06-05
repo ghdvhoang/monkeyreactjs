@@ -30,7 +30,7 @@ export default function Footer() {
                       textAlign: 'center',
                       backgroundRepeat: 'no-repeat',
                       backgroundSize: '20%',
-                      backgroundImage: 'url(/public/react.svg)'
+                      backgroundImage: 'url(/react.svg)'
                     }}
                   ></Box>
                   <Typography variant="h3" fontSize='18px' fontWeight={'600'} color={'#00A7B4'}>Monkey Blogging</Typography>

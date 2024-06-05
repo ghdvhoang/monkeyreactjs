@@ -46,7 +46,7 @@ function Register() {
             height: '160px',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundImage: 'url(/public/react.svg)'
+            backgroundImage: 'url(/react.svg)'
           }}
         ></Box>
 
@@ -225,7 +225,7 @@ function Register() {
             alt="google"
             src="/public/google.svg"
           />
-          <Avatar alt="facebook" src="/public/facebook.svg" />
+          <Avatar alt="facebook" src="/facebook.svg" />
         </Box>
         <Box
           mb={'24px'}
